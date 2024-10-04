@@ -23,6 +23,22 @@ public class Control  implements ActionListener {
         this.grafico.rest.addActionListener(this);
         this.grafico.mul.addActionListener(this);
         this.grafico.div.addActionListener(this);
+        this.grafico.cos.addActionListener(this);
+        this.grafico.sin.addActionListener(this);
+        this.grafico.tan.addActionListener(this);
+        this.grafico.arcos.addActionListener(this);
+        this.grafico.arsen.addActionListener(this);
+        this.grafico.artan.addActionListener(this);
+        this.grafico.com.addActionListener(this);
+        this.grafico.cot.addActionListener(this);
+        this.grafico.csc.addActionListener(this);
+        this.grafico.fact.addActionListener(this);
+        this.grafico.log.addActionListener(this);
+        this.grafico.per.addActionListener(this);
+        this.grafico.pi.addActionListener(this);
+        this.grafico.pot.addActionListener(this);
+        this.grafico.raiz.addActionListener(this);
+        this.grafico.sec.addActionListener(this);
     }
         public void inicio()
         {
@@ -54,7 +70,68 @@ public class Control  implements ActionListener {
                          grafico.result.setText(String.valueOf(x));
                        }
     break;
-    
+    case"sin": {Double  x=codigo.seno(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"cos": {Double  x=codigo.coseno(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"tan": {Double  x=codigo.tangente(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"log": {Double  x=codigo.logaritmo(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"arsen": {Double  x=codigo.arcseno(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"arcos": {Double  x=codigo.arccoseno(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"artan": {Double  x=codigo.arctangente(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"cot": {Double  x=codigo.cotangente(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"csc": {Double  x=codigo.cosecante(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"sec": {Double  x=codigo.secante(Double.parseDouble(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"!": {long  x=codigo.factorial(Integer.parseInt(grafico.caja.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"^": {Double  x=codigo.potencia(Double.parseDouble(grafico.caja.getText()),Double.parseDouble(grafico.caja1.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"sqtr": {Double  x=codigo.raiz(Double.parseDouble(grafico.caja.getText()),Double.parseDouble(grafico.caja1.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"nPr": {long  x=codigo.permutaciones(Integer.parseInt(grafico.caja.getText()),Integer.parseInt(grafico.caja1.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case"nCr": {long  x=codigo.combinaciones(Integer.parseInt(grafico.caja.getText()),Integer.parseInt(grafico.caja1.getText()));
+                         grafico.result.setText(String.valueOf(x));
+                       }
+    break;
+    case "π":  // Asignar el valor de Pi
+            grafico.caja.setText(String.valueOf(Math.PI));
 }
     }
 }

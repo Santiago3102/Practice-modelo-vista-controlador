@@ -27,15 +27,55 @@ public class vista extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel3 = new javax.swing.JPanel();
         caja = new javax.swing.JTextField();
         caja1 = new javax.swing.JTextField();
         result = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
         suma = new javax.swing.JButton();
         rest = new javax.swing.JButton();
         mul = new javax.swing.JButton();
         div = new javax.swing.JButton();
+        pot = new javax.swing.JButton();
+        raiz = new javax.swing.JButton();
+        cos = new javax.swing.JButton();
+        arcos = new javax.swing.JButton();
+        sin = new javax.swing.JButton();
+        arsen = new javax.swing.JButton();
+        tan = new javax.swing.JButton();
+        artan = new javax.swing.JButton();
+        cot = new javax.swing.JButton();
+        pi = new javax.swing.JButton();
+        csc = new javax.swing.JButton();
+        log = new javax.swing.JButton();
+        sec = new javax.swing.JButton();
+        fact = new javax.swing.JButton();
+        per = new javax.swing.JButton();
+        com = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        caja.setMinimumSize(new java.awt.Dimension(80, 22));
+        caja.setPreferredSize(new java.awt.Dimension(80, 22));
+        caja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cajaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(caja);
+
+        caja1.setPreferredSize(new java.awt.Dimension(80, 22));
+        caja1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                caja1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(caja1);
+
+        result.setPreferredSize(new java.awt.Dimension(80, 22));
+        jPanel3.add(result);
+
+        jPanel4.setLayout(new java.awt.GridLayout(10, 2, 5, 5));
 
         suma.setText("+");
         suma.addActionListener(new java.awt.event.ActionListener() {
@@ -43,6 +83,7 @@ public class vista extends javax.swing.JFrame {
                 sumaActionPerformed(evt);
             }
         });
+        jPanel4.add(suma);
 
         rest.setText("-");
         rest.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +91,7 @@ public class vista extends javax.swing.JFrame {
                 restActionPerformed(evt);
             }
         });
+        jPanel4.add(rest);
 
         mul.setText("*");
         mul.addActionListener(new java.awt.event.ActionListener() {
@@ -57,47 +99,78 @@ public class vista extends javax.swing.JFrame {
                 mulActionPerformed(evt);
             }
         });
+        jPanel4.add(mul);
 
         div.setText("/");
+        jPanel4.add(div);
+
+        pot.setText("^");
+        jPanel4.add(pot);
+
+        raiz.setText("sqrt");
+        jPanel4.add(raiz);
+
+        cos.setText("cos");
+        jPanel4.add(cos);
+
+        arcos.setText("arcos");
+        jPanel4.add(arcos);
+
+        sin.setText("sin");
+        jPanel4.add(sin);
+
+        arsen.setText("arsen");
+        jPanel4.add(arsen);
+
+        tan.setText("tan");
+        jPanel4.add(tan);
+
+        artan.setText("artan");
+        jPanel4.add(artan);
+
+        cot.setText("cot");
+        jPanel4.add(cot);
+
+        pi.setText("π");
+        jPanel4.add(pi);
+
+        csc.setText("csc");
+        jPanel4.add(csc);
+
+        log.setText("log");
+        jPanel4.add(log);
+
+        sec.setText("sec");
+        jPanel4.add(sec);
+
+        fact.setText("!");
+        jPanel4.add(fact);
+
+        per.setText("nPr");
+        jPanel4.add(per);
+
+        com.setText("nCr");
+        jPanel4.add(com);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(caja, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addComponent(caja1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(result, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(rest)
-                    .addComponent(mul)
-                    .addComponent(div)
-                    .addComponent(suma))
-                .addGap(55, 55, 55))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(caja, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(caja1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(result, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(suma, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rest, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(mul, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(div, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
@@ -114,6 +187,10 @@ public class vista extends javax.swing.JFrame {
     private void sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_sumaActionPerformed
+
+    private void cajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cajaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cajaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,12 +228,30 @@ public class vista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton arcos;
+    public javax.swing.JButton arsen;
+    public javax.swing.JButton artan;
     public javax.swing.JTextField caja;
     public javax.swing.JTextField caja1;
+    public javax.swing.JButton com;
+    public javax.swing.JButton cos;
+    public javax.swing.JButton cot;
+    public javax.swing.JButton csc;
     public javax.swing.JButton div;
+    public javax.swing.JButton fact;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    public javax.swing.JButton log;
     public javax.swing.JButton mul;
+    public javax.swing.JButton per;
+    public javax.swing.JButton pi;
+    public javax.swing.JButton pot;
+    public javax.swing.JButton raiz;
     public javax.swing.JButton rest;
     public javax.swing.JTextField result;
+    public javax.swing.JButton sec;
+    public javax.swing.JButton sin;
     public javax.swing.JButton suma;
+    public javax.swing.JButton tan;
     // End of variables declaration//GEN-END:variables
 }
